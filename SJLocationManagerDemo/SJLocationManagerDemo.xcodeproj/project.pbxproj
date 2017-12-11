@@ -13,6 +13,8 @@
 		B860EF821FDE7B7E00AF899F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B860EF811FDE7B7E00AF899F /* Assets.xcassets */; };
 		B860EF851FDE7B7E00AF899F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B860EF831FDE7B7E00AF899F /* LaunchScreen.storyboard */; };
 		B860EF881FDE7B7E00AF899F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B860EF871FDE7B7E00AF899F /* main.m */; };
+		B860EF931FDE7CA000AF899F /* SJLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = B860EF901FDE7CA000AF899F /* SJLocation.m */; };
+		B860EF941FDE7CA000AF899F /* SJLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B860EF921FDE7CA000AF899F /* SJLocationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		B860EF841FDE7B7E00AF899F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B860EF861FDE7B7E00AF899F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B860EF871FDE7B7E00AF899F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B860EF8F1FDE7CA000AF899F /* SJLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJLocation.h; sourceTree = "<group>"; };
+		B860EF901FDE7CA000AF899F /* SJLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJLocation.m; sourceTree = "<group>"; };
+		B860EF911FDE7CA000AF899F /* SJLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJLocationManager.h; sourceTree = "<group>"; };
+		B860EF921FDE7CA000AF899F /* SJLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJLocationManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		B860EF771FDE7B7E00AF899F /* SJLocationManagerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B860EF8E1FDE7CA000AF899F /* SJLocationManager */,
 				B860EF781FDE7B7E00AF899F /* AppDelegate.h */,
 				B860EF791FDE7B7E00AF899F /* AppDelegate.m */,
 				B860EF7B1FDE7B7E00AF899F /* ViewController.h */,
@@ -69,6 +76,17 @@
 				B860EF871FDE7B7E00AF899F /* main.m */,
 			);
 			path = SJLocationManagerDemo;
+			sourceTree = "<group>";
+		};
+		B860EF8E1FDE7CA000AF899F /* SJLocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				B860EF8F1FDE7CA000AF899F /* SJLocation.h */,
+				B860EF901FDE7CA000AF899F /* SJLocation.m */,
+				B860EF911FDE7CA000AF899F /* SJLocationManager.h */,
+				B860EF921FDE7CA000AF899F /* SJLocationManager.m */,
+			);
+			path = SJLocationManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B860EF941FDE7CA000AF899F /* SJLocationManager.m in Sources */,
 				B860EF7D1FDE7B7E00AF899F /* ViewController.m in Sources */,
+				B860EF931FDE7CA000AF899F /* SJLocation.m in Sources */,
 				B860EF881FDE7B7E00AF899F /* main.m in Sources */,
 				B860EF7A1FDE7B7E00AF899F /* AppDelegate.m in Sources */,
 			);
@@ -280,6 +300,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SJLocationManagerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iGhibli.SJLocationManagerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -293,6 +314,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SJLocationManagerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iGhibli.SJLocationManagerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
